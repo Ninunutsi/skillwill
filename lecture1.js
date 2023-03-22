@@ -2,8 +2,6 @@
 // lecture 1
 // 
 
-// let users = [{name: 'Temo', age: 25}, {name: 'Lasha', age: 21}, {name: 'Ana', age: 28}]\
-
 let equals = (a,b) => {
     return a === b
 }
