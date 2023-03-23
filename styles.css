@@ -5,12 +5,17 @@
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     min-height: 100vh;
+    padding: 10vh 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 #hider{
@@ -38,4 +43,30 @@ body{
 .instructions{
     margin-bottom: 10px;
     text-align: center;
+}
+
+/* ************************************ */
+
+.data-div{
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    width: 350px;
+    height: 320px;
+}
+
+.title{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-div span{
+    font-size: 14px;
+    padding-left: 20px;
 }
