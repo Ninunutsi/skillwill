@@ -23,3 +23,19 @@ body{
     text-align: center;
     line-height: 25px;
 }
+
+.btn{
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.input{
+    width: 350px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.instructions{
+    margin-bottom: 10px;
+    text-align: center;
+}
