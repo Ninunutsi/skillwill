@@ -28,7 +28,7 @@ fetch(url, {
         Accept: 'application.json',
         'Content-Type': 'application/json'
     },
-    Body: body,
+    Body: JSON.stringify({ userId: 1, title: 'test', body: 'test' }),
     Cache: 'default'
 })
     .then((response) => {return response.json()})
@@ -42,13 +42,47 @@ fetch(url, {
             document.body.appendChild(clone)
         }
     })
-    .catch((err) => {console.log('err')})
+    .catch(() => {console.error('err')})
 
 
-async function deepcopy(obj){
-    try{
-        
+    const originalObj = {
+        a: 1,
+        b: { c: 2 },
+        d: [3, 4]
+      };
+
+
+async function deepCopy(obj){
+    let clonedObj
+
+    if(typeof obj != 'object' || obj === null){
+        return 'parameter is not an object'
     }
+
+    if (Array.isArray(obj)) {
+        clonedObj = [];
+      } else {
+        clonedObj = {};
+    }
+
+    for (let key in obj) {
+    clonedObj[key] = await deepCopy(obj[key]);
+    }
+  
+    return clonedObj;
 }
+
+(async function() {
+    const copiedObj = await deepCopy(originalObj);
+    console.log(copiedObj);
+    
+    copiedObj.a = 5;
+    copiedObj.b.c = 6;
+    copiedObj.d.push(7);
+    
+    console.log(copiedObj);
+    console.log(originalObj); 
+  })();
+
 
 
