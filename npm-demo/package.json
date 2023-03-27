@@ -1,0 +1,16 @@
+{
+  "name": "first-npm",
+  "version": "1.0.0",
+  "description": "my first npm demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ninutsi",
+  "license": "ISC",
+  "dependencies": {
+    "is-number": "^7.0.0",
+    "isemail": "^3.2.0",
+    "validator": "^13.9.0"
+  }
+}
