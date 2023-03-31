@@ -1,0 +1,45 @@
+*{
+  margin: 10px;
+}
+
+body{
+  background: #fcf2e8;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.coraline_pic{
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header{
+  color: #0d2c49;
+  font-size: 16px;
+
+}
+
+.name{
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.button{
+  cursor: pointer;
+  border: 1px solid #0d2c49;
+  background-color: transparent;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.button:hover{
+  transition: 1s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
