@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.todo-header{
+  color: #794ad1;
+}
+
+
+.todo{
+  background-color: #569bfc;
+  top: 15vh;
+  border-radius: 2px;
+  padding: 15px 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 500px;
+  flex: 1;
+  min-height: 20vh;
+  position: absolute;
+}
+
+.done{
+  border-radius: 2px;
+  position: absolute;
+  top: 15vh;
+  padding: 15px 10px;
+  flex: 1;
+  width: 500px;
+  background-color: #02c875;
+  min-height: 20vh;
+}
+
+
+.input{
+  height: 50px;
+  width: 95%;
+  padding-left: 15px;
+  border: none;
+  margin: 10px 0;
+  font-weight: bold;
+  color: rgb(101, 101, 101);
+  border-radius: 5px;
+  font-size: 17px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.input:hover{
+  background-color: #d8e7ff;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.btn{
+  color:#569bfc;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  margin: 18px 5px 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.remove:hover{
+  text-decoration: line-through;
+  transition: 1s;
+}
+
+.remove{
+  color: white;
+}
+
+.add{
+  position: absolute;
+  left: 430px;
+  bottom: 0;
+}
+
+.add:hover{
+  text-decoration: underline;
+}
+
+.add:before {
+  content: "+";
+  height: 6px;
+  display: inline-block;
+  width: 6px;
+  margin-right: 10px;
+  color: transparent;
+}
+
+.add:hover:before {
+  color: #569bfc;
+}
+
+.add:hover::before{
+  content: ("+");
+  margin-right: 10px;
+}
+
+.done-btn{
+  color: white;
+}
+
+.done-btn:hover{
+  color: #01e787;
+  transition: 1s;
+}
+
+.done-para{
+  margin: 5px;
+  width: 400px;
+  height: 40px;
+  background-color: white;
+  border-radius: 3px;
+  font-size: larger;
+  font-weight: bolder;
+  color: #02c875;
+  padding: 10px 0;
+}
