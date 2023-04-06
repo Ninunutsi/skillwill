@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Todo({ removeUser, inputOnClick, addUser}){ 
+function Todo(){ 
 
     const [inputValues, setInputValues] = useState([]);
     const [pushedValues, setPushedValues] = useState([]);

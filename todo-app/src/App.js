@@ -42,12 +42,7 @@ class App extends Component{
       <div className="App">
         
         {this.state.tasks.map((user,index) => {
-           return <Todo 
-           key={index} 
-           removeUser={() => this.removeUser(index)}
-           inputOnClick={this.inputOnClick}
-           onInputChange={this.onInputChange}
-           addUser={this.addUser}/>
+           return <Todo/>
         })}
       </div>
     );
