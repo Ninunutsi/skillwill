@@ -34,7 +34,7 @@ class App extends Component{
     // input is mnishvneloba
     {console.log("inputis mnishvneloba:  " + event.target.value)}
     this.setState({tasks})
-    
+    //
   }
   
   render() {
