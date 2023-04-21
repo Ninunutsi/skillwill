@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './styles.css'
 
-function Done() {
+function Inprogress() {
     const [inputValues, setInputValues] = useState(['']);
     const [number, setNumber] = useState(1)
 
@@ -36,14 +36,14 @@ function Done() {
     };
 
     const borderColor = {
-        borderBottom: '2px solid #93d055',
+        borderBottom: '2px solid #f5c721',
     }
     return (
         <div className="main-div">
             <header 
             style={borderColor}
             className='header'>
-                <h2 className="header-name">Done</h2>
+                <h2 className="header-name">In Progress</h2>
                 <div className='line'></div>
                 <h2 className='number'>{number}</h2>
             </header>
@@ -72,4 +72,4 @@ function Done() {
     )
 }
 
-export default Done
+export default Inprogress

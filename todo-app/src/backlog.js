@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './styles.css'
 
-function Done() {
+function Backlog(){
+
     const [inputValues, setInputValues] = useState(['']);
     const [number, setNumber] = useState(1)
+
 
     const colors = ['#3599ea', '#ea492d', '#f0cd14', '#93cd55']
     const random = colors[Math.floor(Math.random() * colors.length)]
@@ -20,7 +22,6 @@ function Done() {
         outline: 'none',
     }
 
-
     const handleInputChange = (index, event) => {
         const newInputValues = [...inputValues];
         newInputValues[index] = event.target.value;
@@ -35,15 +36,11 @@ function Done() {
         setInputValues([...inputValues, '']);
     };
 
-    const borderColor = {
-        borderBottom: '2px solid #93d055',
-    }
+    
     return (
         <div className="main-div">
-            <header 
-            style={borderColor}
-            className='header'>
-                <h2 className="header-name">Done</h2>
+            <header className='header'>
+                <h2 className="header-name">Backlog</h2>
                 <div className='line'></div>
                 <h2 className='number'>{number}</h2>
             </header>
@@ -72,4 +69,4 @@ function Done() {
     )
 }
 
-export default Done
+export default Backlog
